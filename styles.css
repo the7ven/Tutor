@@ -70,6 +70,7 @@ nav {
 .navlinks ul li a {
   text-decoration: none;
   color: #000000;
+  font-size: .9rem;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -100,6 +101,7 @@ nav {
 .phone-number a{
   text-decoration: none;
   color: #000000;
+  font-size: .8rem;
   font-weight: 900;
 }
 
@@ -109,6 +111,7 @@ nav {
   text-decoration: none;
   padding: 6px 15px;
   border-radius: 5px;
+  font-size: .9rem;
   font-weight: 600;
   transition: all 0.3s ease;
   
