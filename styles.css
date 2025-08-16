@@ -1138,7 +1138,7 @@ nav {
   padding: 80px 0;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+ 
 }
 
 .container {
@@ -1268,36 +1268,16 @@ nav {
 }
 
 /* Visual Elements */
-.tutor-card {
-  background: white;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative;
-  z-index: 5;
-  max-width: 280px;
-  animation: floatAnimation 3s ease-in-out infinite;
+
+
+
+
+.tutor-image img{
+  width: 100%;
+  border-radius: 30px;
 }
 
-.tutor-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  margin: 0 auto 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  color: white;
-  position: relative;
-}
 
-.tutor-image::after {
-  content: "📚";
-  font-size: 2rem;
-}
 
 .tutor-name {
   font-size: 1.1rem;
@@ -1496,8 +1476,8 @@ nav {
   }
 
   .about-content {
-    grid-template-columns: 1fr;
-    gap: 50px;
+   display: flex;
+   flex-direction: column;
   }
 
   .about-features {
@@ -1518,6 +1498,13 @@ nav {
   .floating-shape {
     display: none;
   }
+
+
+  .about-visual {
+  flex-direction: column;
+}
+
+
 }
 
 @media (max-width: 480px) {
