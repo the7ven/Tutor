@@ -265,7 +265,7 @@
       </div>
 
       <div class="cta-section">
-        <a href="#" class="cta-button">Get Started Now</a>
+        <a href="#" class="cta-button-hw">Get Started Now</a>
       </div>
     </div>
 
@@ -390,6 +390,479 @@
             </div>
         </div>
     </section>
+
+
+
+    <section class="services-section">
+        <div class="section-header">
+            <h1>Our Tutoring Services</h1>
+            <p>Discover our comprehensive range of educational services designed to guide you towards academic success</p>
+        </div>
+
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="icones/mentoring.png" alt="">
+                </div>
+                <h3>Personalized Tutoring</h3>
+                <p>Individual sessions tailored to your pace and specific needs with expert tutors.</p>
+                <ul class="service-features">
+                    <li>Online or in-person sessions</li>
+                    <li>Flexible schedules 24/7</li>
+                    <li>Personalized progress tracking</li>
+                    <li>Adapted teaching methods</li>
+                </ul>
+                <button class="cta-button" onclick="showBookingModal('individual')">Book a Session</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="icones/work.png" alt="">
+                </div>
+                <h3>Group Classes</h3>
+                <p>Join dynamic study groups and benefit from collaborative learning experiences.</p>
+                <ul class="service-features">
+                    <li>Groups of 3-6 students</li>
+                    <li>Affordable pricing</li>
+                    <li>Collective motivation</li>
+                    <li>Interactive sessions</li>
+                </ul>
+                <button class="cta-button" onclick="showBookingModal('group')">Join a Group</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="icones/pdf.png" alt="">
+                </div>
+                <h3>Downloadable PDF Courses</h3>
+                <p>Access our comprehensive library of PDF courses for independent learning.</p>
+                <ul class="service-features">
+                    <li>Over 500 courses available</li>
+                    <li>Instant download</li>
+                    <li>Unlimited personal use</li>
+                    <li>Free updates</li>
+                </ul>
+                <button class="cta-button" onclick="showPDFLibrary()">Explore Library</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="icones/exam-preparation.png" alt="">
+                </div>
+                <h3>Exam Preparation</h3>
+                <p>Intensive programs to effectively prepare for your important exams and competitions.</p>
+                <ul class="service-features">
+                    <li>SAT, ACT, Entrance exams</li>
+                    <li>Regular practice tests</li>
+                    <li>Exam strategies</li>
+                    <li>Psychological support</li>
+                </ul>
+                <button class="cta-button" onclick="showBookingModal('exam')">Start Preparation</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="icones/learning-support.png" alt="">
+                </div>
+                <h3>Academic Support</h3>
+                <p>Regular assistance to maintain and improve your academic performance throughout the year.</p>
+                <ul class="service-features">
+                    <li>Homework help</li>
+                    <li>Scheduled reviews</li>
+                    <li>Foundation strengthening</li>
+                    <li>Parental tracking available</li>
+                </ul>
+                <button class="cta-button" onclick="showBookingModal('support')">Get Support</button>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                  <img src="icones/skill-development.png" alt="">
+                </div>
+                <h3>Specialized Training</h3>
+                <p>Develop specific skills with our targeted training programs in various fields.</p>
+                <ul class="service-features">
+                    <li>Programming & Computer Science</li>
+                    <li>Foreign languages</li>
+                    <li>Applied sciences</li>
+                    <li>Completion certificates</li>
+                </ul>
+                <button class="cta-button" onclick="showBookingModal('specialized')">View Training</button>
+            </div>
+        </div>
+
+        <div class="courses-section">
+            <h2>Available Subjects</h2>
+            <div class="subjects-grid1">
+                <div class="subject-tag1">Mathematics</div>
+                <div class="subject-tag1">Physics & Chemistry</div>
+                <div class="subject-tag1">Biology</div>
+                <div class="subject-tag1">English Literature</div>
+                <div class="subject-tag1">Computer Science</div>
+                <div class="subject-tag1">History & Geography</div>
+                <div class="subject-tag1">Economics</div>
+                <div class="subject-tag1">Business Studies</div>
+                <div class="subject-tag1">Philosophy</div>
+                <div class="subject-tag1">Art & Design</div>
+                <div class="subject-tag1">Music</div>
+                <div class="subject-tag1">Spanish</div>
+                <div class="subject-tag1">French</div>
+                <div class="subject-tag1">German</div>
+                <div class="subject-tag1">Chinese</div>
+               
+            </div>
+        </div>
+
+       
+          
+      </section>
+
+
+
+      <section class="pricing-section">
+        <div class="section-header">
+            <h1>Choose Your Learning Plan</h1>
+            <p>Flexible pricing options designed to fit your educational needs and budget</p>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <div class="service-type">Basic</div>
+                <h3>Academic Support</h3>
+                <p>Perfect for students who need regular homework help and basic guidance.</p>
+                
+                <div class="price-container">
+                    <div class="price">$25</div>
+                    <div class="price-unit">per session</div>
+                </div>
+
+                <ul class="features-list">
+                    <li>1-on-1 tutoring sessions</li>
+                    <li>Homework assistance</li>
+                    <li>Basic progress tracking</li>
+                    <li>Email support</li>
+                    <li>Flexible scheduling</li>
+                    <li class="not-included">Exam preparation</li>
+                    <li class="not-included">Specialized training</li>
+                    <li class="not-included">Group sessions</li>
+                </ul>
+
+                <button class="cta-button secondary" onclick="selectPlan('basic')">Get Started</button>
+                <div class="money-back">7-day money back guarantee</div>
+            </div>
+
+            <!-- Premium Plan (Most Popular) -->
+            <div class="pricing-card popular">
+                <div class="service-type">Premium</div>
+                <h3>Complete Learning Package</h3>
+                <p>Comprehensive tutoring with exam preparation and specialized training included.</p>
+                
+                <div class="price-container">
+                    <div class="price">$45</div>
+                    <div class="price-unit">per session</div>
+                </div>
+
+                <ul class="features-list">
+                    <li>1-on-1 personalized tutoring</li>
+                    <li>Exam preparation strategies</li>
+                    <li>Specialized subject training</li>
+                    <li>Advanced progress tracking</li>
+                    <li>Priority support 24/7</li>
+                    <li>Access to group sessions</li>
+                    <li>Custom study materials</li>
+                    <li>Monthly performance reports</li>
+                </ul>
+
+                <button class="cta-button" onclick="selectPlan('premium')">Choose Premium</button>
+                <div class="money-back">14-day money back guarantee</div>
+            </div>
+
+            <!-- Group Plan -->
+            <div class="pricing-card">
+                <div class="service-type">Group</div>
+                <h3>Collaborative Learning</h3>
+                <p>Join study groups and benefit from peer learning with expert guidance.</p>
+                
+                <div class="price-container">
+                    <div class="price">$15</div>
+                    <div class="price-unit">per session</div>
+                </div>
+
+                <ul class="features-list">
+                    <li>Small group sessions (3-6 students)</li>
+                    <li>Interactive learning</li>
+                    <li>Peer collaboration</li>
+                    <li>Expert tutor guidance</li>
+                    <li>Shared study materials</li>
+                    <li>Group progress tracking</li>
+                    <li class="not-included">1-on-1 sessions</li>
+                    <li class="not-included">Individual reports</li>
+                </ul>
+
+                <button class="cta-button secondary" onclick="selectPlan('group')">Join Group</button>
+                <div class="money-back">30-day satisfaction guarantee</div>
+            </div>
+
+            <!-- Intensive Exam Prep -->
+            <div class="pricing-card">
+                <div class="service-type">Intensive</div>
+                <h3>Exam Mastery</h3>
+                <p>Focused exam preparation with practice tests and strategic guidance.</p>
+                
+                <div class="price-container">
+                    <div class="price">$65</div>
+                    <div class="price-unit">per session</div>
+                </div>
+
+                <ul class="features-list">
+                    <li>Intensive exam preparation</li>
+                    <li>Regular practice tests</li>
+                    <li>Test-taking strategies</li>
+                    <li>Performance analysis</li>
+                    <li>Stress management techniques</li>
+                    <li>Last-minute revision sessions</li>
+                    <li>Success guarantee program</li>
+                    <li>Post-exam support</li>
+                </ul>
+
+                <button class="cta-button" onclick="selectPlan('intensive')">Start Prep</button>
+                <div class="money-back">Results guarantee or full refund</div>
+            </div>
+
+            <!-- Monthly Unlimited -->
+            <div class="pricing-card">
+                <div class="service-type">Unlimited</div>
+                <h3>All-Access Pass</h3>
+                <p>Unlimited sessions with full access to all services and resources.</p>
+                
+                <div class="price-container">
+                    <div class="price">$299</div>
+                    <div class="price-unit">per month</div>
+                </div>
+
+                <ul class="features-list">
+                    <li>Unlimited 1-on-1 sessions</li>
+                    <li>All group classes included</li>
+                    <li>Complete exam preparation</li>
+                    <li>Specialized training access</li>
+                    <li>VIP support priority</li>
+                    <li>Personal learning advisor</li>
+                    <li>All PDF courses included</li>
+                    <li>Family sharing (up to 3 students)</li>
+                </ul>
+
+                <button class="cta-button" onclick="selectPlan('unlimited')">Go Unlimited</button>
+                <div class="money-back">30-day money back guarantee</div>
+            </div>
+
+            <!-- Corporate/Bulk -->
+            <div class="pricing-card">
+                <div class="service-type">Enterprise</div>
+                <h3>Institutional Package</h3>
+                <p>Custom solutions for schools, organizations, and large groups.</p>
+                
+                <div class="price-container">
+                    <div class="price">Custom</div>
+                    <div class="price-unit">pricing</div>
+                </div>
+
+                <ul class="features-list">
+                    <li>Bulk pricing discounts</li>
+                    <li>Custom curriculum development</li>
+                    <li>Dedicated account manager</li>
+                    <li>Advanced analytics dashboard</li>
+                    <li>Integration capabilities</li>
+                    <li>White-label options</li>
+                    <li>Training for educators</li>
+                    <li>24/7 enterprise support</li>
+                </ul>
+
+                <button class="cta-button secondary" onclick="selectPlan('enterprise')">Contact Sales</button>
+                <div class="money-back">Custom terms available</div>
+            </div>
+        </div>
+
+        <!-- PDF Courses Section -->
+        <div class="pdf-pricing">
+            <h2>PDF Course Library</h2>
+            <p>Download comprehensive study materials for independent learning. Over 500+ courses available with lifetime access.</p>
+            
+            <div class="pdf-options">
+                <div class="pdf-option">
+                    <h4>Single Course</h4>
+                    <div class="pdf-price">$12</div>
+                    <p>Individual PDF course with exercises and solutions</p>
+                    <button class="cta-button secondary" onclick="browseCourses()">Browse Courses</button>
+                </div>
+                
+                <div class="pdf-option">
+                    <h4>Subject Bundle</h4>
+                    <div class="pdf-price">$45</div>
+                    <p>Complete subject collection (5-8 courses) with bonus materials</p>
+                    <button class="cta-button secondary" onclick="browseBundles()">View Bundles</button>
+                </div>
+                
+                <div class="pdf-option">
+                    <h4>Full Library Access</h4>
+                    <div class="pdf-price">$149</div>
+                    <p>Lifetime access to entire PDF library with free updates</p>
+                    <button class="cta-button" onclick="getFullAccess()">Get Full Access</button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+  <div class="testi-container">
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h1>What Our Students Say</h1>
+            <p>Discover how our personalized tutoring has transformed the academic journey of thousands of students worldwide</p>
+        </div>
+
+        <div class="testimonials-container">
+            <div class="testimonials-grid">
+                
+                <div class="testimonial-card">
+                    <div class="subject-tag">Mathematics</div>
+                    <div class="quote-icon">💭</div>
+                    <div class="testimonial-text">
+                        The personalized tutoring completely changed my approach to mathematics. My tutor helped me understand complex concepts that seemed impossible before. I went from struggling with basic algebra to excelling in calculus!
+                    </div>
+                    <div class="student-info">
+                        <div class="student-avatar">SA</div>
+                        <div class="student-details">
+                            <h4>Sarah Anderson</h4>
+                            <p>High School Senior</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="subject-tag">Physics</div>
+                    <div class="quote-icon">🔬</div>
+                    <div class="testimonial-text">
+                        The exam preparation program was incredible! The practice tests and strategic guidance helped me score 95% on my SAT Physics subject test. The tutors really know how to make complex topics understandable.
+                    </div>
+                    <div class="student-info">
+                        <div class="student-avatar">MJ</div>
+                        <div class="student-details">
+                            <h4>Michael Johnson</h4>
+                            <p>College Sophomore</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="subject-tag">English</div>
+                    <div class="quote-icon">📖</div>
+                    <div class="testimonial-text">
+                        As an international student, I struggled with English literature. The group sessions were amazing - learning with peers from different backgrounds enriched my understanding. My writing skills improved dramatically!
+                    </div>
+                    <div class="student-info">
+                        <div class="student-avatar">LK</div>
+                        <div class="student-details">
+                            <h4>Lisa Kim</h4>
+                            <p>University Student</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="subject-tag">Chemistry</div>
+                    <div class="quote-icon">⚗️</div>
+                    <div class="testimonial-text">
+                        The PDF courses are fantastic for self-study! I downloaded the entire chemistry bundle and it helped me understand organic chemistry concepts that my school teacher couldn't explain clearly. Worth every penny!
+                    </div>
+                    <div class="student-info">
+                        <div class="student-avatar">DB</div>
+                        <div class="student-details">
+                            <h4>David Brown</h4>
+                            <p>Pre-Med Student</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="subject-tag">Computer Science</div>
+                    <div class="quote-icon">💻</div>
+                    <div class="testimonial-text">
+                        The specialized training in programming was exactly what I needed. My tutor guided me through complex algorithms and data structures. I landed my dream internship at Google thanks to the solid foundation I built here!
+                    </div>
+                    <div class="student-info">
+                        <div class="student-avatar">EW</div>
+                        <div class="student-details">
+                            <h4>Emily Wang</h4>
+                            <p>Computer Science Major</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="subject-tag">Spanish</div>
+                    <div class="quote-icon">🌟</div>
+                    <div class="testimonial-text">
+                        Learning Spanish through this platform has been an incredible journey. The interactive sessions and cultural context provided by native speaker tutors made all the difference. ¡Ahora hablo español con confianza!
+                    </div>
+                    <div class="student-info">
+                        <div class="student-avatar">JR</div>
+                        <div class="student-details">
+                            <h4>James Rodriguez</h4>
+                            <p>Business Student</p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </section>
+  </div>  
 
 
     <script src="main.js"></script>

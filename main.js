@@ -231,3 +231,83 @@ window.addEventListener('load', () => {
     document.body.style.transition = 'opacity 0.3s ease';
     document.body.style.opacity = '1';
 });
+
+
+
+
+ function showBookingModal(serviceType) {
+            const services = {
+                individual: 'Personalized Tutoring',
+                group: 'Group Classes',
+                exam: 'Exam Preparation',
+                support: 'Academic Support',
+                specialized: 'Specialized Training'
+            };
+            
+            alert(`Redirecting to booking for: ${services[serviceType]}\n\nThis feature would be connected to your booking system.`);
+        }
+
+        function showPDFLibrary() {
+            alert(`Opening PDF Library\n\nThis section would contain:\n• PDF course catalog\n• Search system\n• Shopping cart\n• Instant downloads`);
+        }
+
+        // Animation d'entrée pour les cartes
+        const cards = document.querySelectorAll('.service-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        });
+
+        // Initialiser l'animation
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+
+
+
+
+
+         function selectPlan(planType) {
+            const plans = {
+                basic: 'Basic Academic Support - $25/session',
+                premium: 'Premium Complete Package - $45/session',
+                group: 'Group Collaborative Learning - $15/session',
+                intensive: 'Intensive Exam Mastery - $65/session',
+                unlimited: 'Unlimited All-Access Pass - $299/month',
+                enterprise: 'Enterprise Institutional Package - Custom pricing'
+            };
+            
+            alert(`You selected: ${plans[planType]}\n\nRedirecting to checkout...\n\nThis would connect to your payment processing system.`);
+        }
+
+        function browseCourses() {
+            alert(`Opening PDF Course Catalog\n\n• Browse by subject\n• Search functionality\n• Preview available\n• Instant download after purchase`);
+        }
+
+        function browseBundles() {
+            alert(`Subject Bundle Options:\n\n• Mathematics Bundle (8 courses)\n• Science Bundle (6 courses)\n• Languages Bundle (7 courses)\n• Business Bundle (5 courses)\n\nSave up to 40% compared to individual purchases!`);
+        }
+
+        function getFullAccess() {
+            alert(`Full Library Access includes:\n\n• 500+ PDF courses\n• All future releases\n• Exclusive bonus materials\n• Lifetime updates\n• Premium support\n\nOne-time payment: $149`);
+        }
+
+    
+        // Initialize animations
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = card.classList.contains('popular') 
+                ? 'scale(1.05) translateY(50px)' 
+                : 'translateY(50px)';
+            card.style.transition = 'all 0.8s ease';
+            observer.observe(card);
+        });
