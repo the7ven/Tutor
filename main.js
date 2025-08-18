@@ -311,3 +311,126 @@ window.addEventListener('load', () => {
             card.style.transition = 'all 0.8s ease';
             observer.observe(card);
         });
+
+
+          function navigateModal(currentModalId, direction) {
+            const currentNum = parseInt(currentModalId.replace('modal', ''));
+            let nextNum = currentNum + direction;
+            
+            // Handle wrapping around
+            if (nextNum < 1) nextNum = 6;
+            if (nextNum > 6) nextNum = 1;
+            
+            const nextModalId = 'modal' + nextNum;
+            
+            // Close current modal
+            closeModal(currentModalId);
+            
+            // Open next modal with a slight delay for smooth transition
+            setTimeout(() => {
+                openModal(nextModalId);
+            }, 100);
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+            
+            // Reset expanded content
+            const content = document.getElementById(modalId.replace('modal', 'content'));
+            if (content) {
+                content.classList.remove('expanded');
+                const btn = content.previousElementSibling;
+                if (btn) {
+                    btn.innerHTML = '<span>Read Full Article</span><span>↓</span>';
+                }
+            }
+        }
+
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            const btn = content.previousElementSibling;
+            
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                btn.innerHTML = '<span>Read Full Article</span><span>↓</span>';
+            } else {
+                content.classList.add('expanded');
+                btn.innerHTML = '<span>Collapse Article</span><span>↑</span>';
+                
+                // Smooth scroll to content
+                setTimeout(() => {
+                    content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    closeModal(modal.id);
+                }
+            });
+        }
+
+        // Close modal on Escape key press
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const openModal = document.querySelector('.modal[style*="block"]');
+                if (openModal) {
+                    closeModal(openModal.id);
+                }
+            }
+            
+            // Navigate with arrow keys
+            if (event.key === 'ArrowLeft') {
+                const openModal = document.querySelector('.modal[style*="block"]');
+                if (openModal) {
+                    navigateModal(openModal.id, -1);
+                }
+            }
+            
+            if (event.key === 'ArrowRight') {
+                const openModal = document.querySelector('.modal[style*="block"]');
+                if (openModal) {
+                    navigateModal(openModal.id, 1);
+                }
+            }
+        });
+
+        // Add smooth scrolling for modal content
+        document.querySelectorAll('.modal-body').forEach(modalBody => {
+            modalBody.style.scrollBehavior = 'smooth';
+        });
+
+        // Add loading animation for images
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.bento-content, .modal-header');
+            images.forEach(img => {
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.5s ease';
+                
+                const bgImage = new Image();
+                const bgUrl = img.style.backgroundImage.match(/url\(['"]?([^'"]+)['"]?\)/);
+                if (bgUrl) {
+                    bgImage.onload = () => {
+                        img.style.opacity = '1';
+                    };
+                    bgImage.src = bgUrl[1];
+                }
+            });
+        });
+
+
+        
+
+        document.querySelectorAll('.footer-section').forEach((el) => {
+            observer.observe(el);
+        });

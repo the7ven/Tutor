@@ -36,7 +36,7 @@
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#blog">Blog</a></li>
           </ul>
         </div>
@@ -66,10 +66,11 @@
 
         <div class="mobile-menu" id="mobileMenu">
           <ul>
-            <li><a href="home">Home</a></li>
+            <li><a href="">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#blog">Blog</a></li>
           </ul>
         </div>
@@ -271,7 +272,7 @@
 
 
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <!-- Floating Shapes -->
         <div class="floating-shape shape-1"></div>
         <div class="floating-shape shape-2"></div>
@@ -393,7 +394,7 @@
 
 
 
-    <section class="services-section">
+    <section class="services-section" id="services">
         <div class="section-header">
             <h1>Our Tutoring Services</h1>
             <p>Discover our comprehensive range of educational services designed to guide you towards academic success</p>
@@ -520,7 +521,7 @@
 
 
 
-      <section class="pricing-section">
+      <section class="pricing-section"  id="pricing">
         <div class="section-header">
             <h1>Choose Your Learning Plan</h1>
             <p>Flexible pricing options designed to fit your educational needs and budget</p>
@@ -715,7 +716,7 @@
       </section>
 
 
-  <div class="testi-container">
+  <div class="testi-container"  id="testimonials">
     <section class="testimonials-section">
         <div class="section-header">
             <h1>What Our Students Say</h1>
@@ -863,6 +864,407 @@
         
     </section>
   </div>  
+
+
+
+
+<section class="blog-section" id="blog">
+        <div class="section-header">
+            <h1>Educational Insights</h1>
+            <p>Discover expert tips, success stories, and innovative methods to unlock your learning potential</p>
+        </div>
+
+        <div class="bento-grid">
+            <div class="bento-item large" onclick="openModal('modal1')">
+                <div class="bento-content" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="bento-text">
+                        <span class="bento-tag">Study Methods</span>
+                        <h2 class="bento-title">5 Memory Techniques That Actually Work</h2>
+                        <p class="bento-excerpt">Scientifically proven strategies to boost your memory and ace your exams with confidence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-item medium" onclick="openModal('modal2')">
+                <div class="bento-content" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="bento-text">
+                        <span class="bento-tag">Success Story</span>
+                        <h2 class="bento-title">From Struggling to Straight A's</h2>
+                        <p class="bento-excerpt">How personalized tutoring transformed Sarah's academic journey in just 3 months.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-item small" onclick="openModal('modal3')">
+                <div class="bento-content" style="background-image: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="bento-text">
+                        <span class="bento-tag">Technology</span>
+                        <h2 class="bento-title">AI-Powered Learning Revolution</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-item small" onclick="openModal('modal4')">
+                <div class="bento-content" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="bento-text">
+                        <span class="bento-tag">Wellness</span>
+                        <h2 class="bento-title">Conquering Exam Anxiety</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-item tall" onclick="openModal('modal5')">
+                <div class="bento-content" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                    <div class="bento-text">
+                        <span class="bento-tag">Career Guidance</span>
+                        <h2 class="bento-title">Choosing Your Path</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-item small" onclick="openModal('modal6')">
+                <div class="bento-content" style="background-image: url('https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <div class="bento-text">
+                        <span class="bento-tag">For Parents</span>
+                        <h2 class="bento-title">Supporting Your Child's Success</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="modal-counter">1 / 6</div>
+            <button class="nav-button nav-prev" onclick="navigateModal('modal1', -1)">‹</button>
+            <button class="nav-button nav-next" onclick="navigateModal('modal1', 1)">›</button>
+            <div class="modal-header" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="modal-header-content">
+                    <span class="modal-tag">Study Methods</span>
+                    <h1 class="modal-title">5 Memory Techniques That Actually Work</h1>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-excerpt">Transform your study sessions with these scientifically backed memory enhancement strategies that top students swear by.</p>
+                <button class="expand-btn" onclick="toggleContent('content1')">
+                    <span>Read Full Article</span>
+                    <span>↓</span>
+                </button>
+                <div id="content1" class="article-content">
+                    <h3>The Science Behind Memory</h3>
+                    <p>Memory formation is a complex process involving multiple brain regions. Understanding how your brain processes and stores information is the first step toward improving your learning efficiency.</p>
+                    
+                    <h3>1. The Memory Palace Technique</h3>
+                    <p>Also known as the method of loci, this ancient technique involves associating information with specific locations in a familiar space. Studies show it can improve recall by up to 300%.</p>
+                    
+                    <h3>2. Spaced Repetition</h3>
+                    <p>Instead of cramming, review material at increasing intervals. This technique leverages the spacing effect, allowing your brain to strengthen neural pathways over time.</p>
+                    
+                    <h3>3. The Feynman Technique</h3>
+                    <p>Named after physicist Richard Feynman, this method involves explaining concepts in simple terms. If you can't explain it simply, you don't understand it well enough.</p>
+                    
+                    <h3>4. Visual Association</h3>
+                    <p>Create vivid, bizarre mental images to link new information with existing knowledge. The more unusual the association, the more memorable it becomes.</p>
+                    
+                    <h3>5. Active Recall</h3>
+                    <p>Instead of passive reading, actively test yourself. This strengthens memory retrieval pathways and identifies knowledge gaps early.</p>
+                    
+                    <p>Implementing these techniques requires practice, but the results speak for themselves. Students using these methods report 40-60% improvement in retention rates within just two weeks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="modal-counter">2 / 6</div>
+            <button class="nav-button nav-prev" onclick="navigateModal('modal2', -1)">‹</button>
+            <button class="nav-button nav-next" onclick="navigateModal('modal2', 1)">›</button>
+            <div class="modal-header" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="modal-header-content">
+                    <span class="modal-tag">Success Story</span>
+                    <h1 class="modal-title">From Struggling to Straight A's</h1>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-excerpt">Sarah's incredible transformation from failing grades to academic excellence through personalized tutoring and determination.</p>
+                <button class="expand-btn" onclick="toggleContent('content2')">
+                    <span>Read Sarah's Journey</span>
+                    <span>↓</span>
+                </button>
+                <div id="content2" class="article-content">
+                    <h3>The Starting Point</h3>
+                    <p>When Sarah first contacted our tutoring service, she was struggling with a 2.1 GPA and felt overwhelmed by her coursework. Math and science seemed impossible, and her confidence was at an all-time low.</p>
+                    
+                    <h3>Personalized Assessment</h3>
+                    <p>Our team conducted a comprehensive evaluation to identify Sarah's learning style, strengths, and areas for improvement. We discovered she was a visual learner who had been trying to succeed with auditory teaching methods.</p>
+                    
+                    <h3>The Transformation Plan</h3>
+                    <p>We paired Sarah with Emma, a specialist tutor who understood visual learning techniques. Together, they developed a customized study plan that included:</p>
+                    <ul>
+                        <li>Interactive visual aids and diagrams</li>
+                        <li>Color-coded note-taking systems</li>
+                        <li>Regular progress assessments</li>
+                        <li>Confidence-building exercises</li>
+                    </ul>
+                    
+                    <h3>Month-by-Month Progress</h3>
+                    <p><strong>Month 1:</strong> Sarah's test scores improved from 65% to 78% average. More importantly, she started enjoying her study sessions.</p>
+                    <p><strong>Month 2:</strong> Her GPA rose to 3.2, and she began helping classmates with concepts she once found impossible.</p>
+                    <p><strong>Month 3:</strong> Sarah achieved a 3.8 GPA and received her first A+ in calculus - a subject she previously failed.</p>
+                    
+                    <h3>The Results</h3>
+                    <p>Today, Sarah maintains a 3.9 GPA and has been accepted to her dream university's engineering program. She credits her success to finding the right learning approach and having dedicated support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional modals for other articles -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="modal-counter">3 / 6</div>
+            <button class="nav-button nav-prev" onclick="navigateModal('modal3', -1)">‹</button>
+            <button class="nav-button nav-next" onclick="navigateModal('modal3', 1)">›</button>
+            <div class="modal-header" style="background-image: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="modal-header-content">
+                    <span class="modal-tag">Technology</span>
+                    <h1 class="modal-title">AI-Powered Learning Revolution</h1>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-excerpt">Discover how artificial intelligence is reshaping education and creating personalized learning experiences for every student.</p>
+                <button class="expand-btn" onclick="toggleContent('content3')">
+                    <span>Explore AI in Education</span>
+                    <span>↓</span>
+                </button>
+                <div id="content3" class="article-content">
+                    <h3>The AI Revolution in Learning</h3>
+                    <p>Artificial Intelligence is transforming education by providing personalized learning paths, instant feedback, and adaptive content that adjusts to each student's pace and learning style.</p>
+                    
+                    <h3>Personalized Learning Paths</h3>
+                    <p>AI algorithms analyze student performance, learning preferences, and progress patterns to create customized curricula that optimize learning outcomes.</p>
+                    
+                    <h3>Intelligent Tutoring Systems</h3>
+                    <p>These systems provide 24/7 support, offering explanations, hints, and practice problems tailored to individual needs, making quality education accessible anytime, anywhere.</p>
+                    
+                    <h3>The Future of Education</h3>
+                    <p>As AI continues to evolve, we can expect even more sophisticated tools that will make learning more engaging, effective, and accessible to students worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <div class="modal-counter">4 / 6</div>
+            <button class="nav-button nav-prev" onclick="navigateModal('modal4', -1)">‹</button>
+            <button class="nav-button nav-next" onclick="navigateModal('modal4', 1)">›</button>
+            <div class="modal-header" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="modal-header-content">
+                    <span class="modal-tag">Wellness</span>
+                    <h1 class="modal-title">Conquering Exam Anxiety</h1>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-excerpt">Learn proven strategies to manage test anxiety and perform your best when it matters most.</p>
+                <button class="expand-btn" onclick="toggleContent('content4')">
+                    <span>Master Your Mindset</span>
+                    <span>↓</span>
+                </button>
+                <div id="content4" class="article-content">
+                    <h3>Understanding Exam Anxiety</h3>
+                    <p>Test anxiety affects millions of students worldwide, causing physical symptoms like rapid heartbeat, sweating, and mental blocks that can significantly impact performance.</p>
+                    
+                    <h3>Preparation Strategies</h3>
+                    <p>The key to reducing anxiety is thorough preparation combined with stress management techniques that help you stay calm and focused during exams.</p>
+                    
+                    <h3>Breathing Techniques</h3>
+                    <p>Simple breathing exercises can activate your body's relaxation response, helping you maintain composure and think clearly during high-pressure situations.</p>
+                    
+                    <h3>Building Confidence</h3>
+                    <p>Regular practice tests and positive self-talk can build the confidence needed to approach exams with a calm, focused mindset.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <div class="modal-counter">5 / 6</div>
+            <button class="nav-button nav-prev" onclick="navigateModal('modal5', -1)">‹</button>
+            <button class="nav-button nav-next" onclick="navigateModal('modal5', 1)">›</button>
+            <div class="modal-header" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="modal-header-content">
+                    <span class="modal-tag">Career Guidance</span>
+                    <h1 class="modal-title">Choosing Your Path</h1>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-excerpt">A comprehensive guide to making informed decisions about your academic and career future.</p>
+                <button class="expand-btn" onclick="toggleContent('content5')">
+                    <span>Find Your Direction</span>
+                    <span>↓</span>
+                </button>
+                <div id="content5" class="article-content">
+                    <h3>Self-Discovery Process</h3>
+                    <p>Before choosing a career path, it's essential to understand your interests, strengths, values, and long-term goals through careful self-reflection and assessment.</p>
+                    
+                    <h3>Exploring Options</h3>
+                    <p>Research different fields, talk to professionals, and consider internships or job shadowing opportunities to gain real-world insights into potential careers.</p>
+                    
+                    <h3>Making Informed Decisions</h3>
+                    <p>Consider factors like job market trends, salary expectations, work-life balance, and personal fulfillment when evaluating career options.</p>
+                    
+                    <h3>Staying Flexible</h3>
+                    <p>Remember that career paths can evolve. Focus on building transferable skills and maintaining a growth mindset for long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <div class="modal-counter">6 / 6</div>
+            <button class="nav-button nav-prev" onclick="navigateModal('modal6', -1)">‹</button>
+            <button class="nav-button nav-next" onclick="navigateModal('modal6', 1)">›</button>
+            <div class="modal-header" style="background-image: url('https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="modal-header-content">
+                    <span class="modal-tag">For Parents</span>
+                    <h1 class="modal-title">Supporting Your Child's Success</h1>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-excerpt">Practical advice for parents on how to effectively support their child's academic journey without overwhelming them.</p>
+                <button class="expand-btn" onclick="toggleContent('content6')">
+                    <span>Learn How to Help</span>
+                    <span>↓</span>
+                </button>
+                <div id="content6" class="article-content">
+                    <h3>Creating a Supportive Environment</h3>
+                    <p>Establish a quiet, organized study space and maintain consistent routines that help your child develop good study habits and time management skills.</p>
+                    
+                    <h3>Communication is Key</h3>
+                    <p>Regular, open conversations about school experiences, challenges, and goals help you stay informed and provide appropriate support when needed.</p>
+                    
+                    <h3>Encouraging Independence</h3>
+                    <p>While support is important, fostering independence and problem-solving skills prepares your child for long-term academic and personal success.</p>
+                    
+                    <h3>When to Seek Help</h3>
+                    <p>Recognize signs that your child might benefit from additional support, such as tutoring, and know how to find qualified professionals who can complement your efforts at home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+</section>
+
+
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand fade-in">
+                    <div class="logo">Tutor</div>
+                    <p class="footer-description">
+                        Connect with expert tutors in any subject. 
+                        Unlock your potential with personalized guidance, 
+                        anytime, anywhere.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">20K+</span>
+                            <span class="stat-label">Tutors</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30K+</span>
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Subjects</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" title="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link instagram" title="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link linkedin" title="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section fade-in">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Private Tutoring</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                        <li><a href="#">Exam Preparation</a></li>
+                        <li><a href="#">Academic Support</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Homework Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section fade-in">
+                    <h4>Subjects</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Mathematics</a></li>
+                        <li><a href="#">Physics</a></li>
+                        <li><a href="#">Chemistry</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">History</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section fade-in">
+                    <h4>Contact</h4>
+                    <div class="contact-info phone">+225 0757471552</div>
+                    <div class="contact-info email">contact@tutor.ci</div>
+                    <div class="contact-info address">Abidjan, Côte d'Ivoire</div>
+                    
+                    <h4 style="margin-top: 25px;">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 Tutor. All rights reserved. Designed by Nkwel corneille
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
     <script src="main.js"></script>
