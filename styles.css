@@ -3035,7 +3035,17 @@ nav {
   }
 }
 
+
+
+
+
+
 /* Modal Styles */
+
+
+
+
+
 .modal-overlay {
   display: none;
   position: fixed;
@@ -3086,7 +3096,7 @@ nav {
   position: relative;
   overflow: hidden;
   animation: slideIn 0.3s ease;
-  max-height: 90vh;
+  max-height: 100vh;
   overflow-y: auto;
 }
 
