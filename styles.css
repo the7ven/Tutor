@@ -2183,8 +2183,8 @@ nav {
 }
 
 .quote-icon {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background: linear-gradient(135deg, #2563eb, #0369a1);
   border-radius: 50%;
   display: flex;
@@ -2203,7 +2203,7 @@ nav {
 }
 
 .testimonial-text {
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 1.6;
   color: #1e293b;
   margin-bottom: 20px;
@@ -2254,7 +2254,7 @@ nav {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   border: 3px solid rgba(255, 255, 255, 0.5);
   transition: all 0.4s ease;
@@ -2267,14 +2267,14 @@ nav {
 
 .student-details h4 {
   color: #1e40af;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .student-details p {
   color: #475569;
-  font-size: 1rem;
+  font-size: .7rem;
   font-weight: 500;
 }
 
