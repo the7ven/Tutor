@@ -434,3 +434,119 @@ window.addEventListener('load', () => {
         document.querySelectorAll('.footer-section').forEach((el) => {
             observer.observe(el);
         });
+
+
+  
+        
+
+
+     // Fonctions pour gérer le modal
+        function openLoginModal() {
+            const modal = document.getElementById('loginModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Empêche le scroll de la page principale
+        }
+
+        function closeLoginModal() {
+            const modal = document.getElementById('loginModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Réactive le scroll
+        }
+
+        // Fermer le modal en cliquant sur l'overlay
+        document.getElementById('loginModal').addEventListener('click', (e) => {
+            if (e.target.id === 'loginModal') {
+                closeLoginModal();
+            }
+        });
+
+        // Fermer le modal avec la touche Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.getElementById('loginModal').classList.contains('active')) {
+                closeLoginModal();
+            }
+        });
+
+        // Gestion du sélecteur de type d'utilisateur
+        const userTypeBtns = document.querySelectorAll('.user-type-btn');
+        const loginForm = document.getElementById('loginForm');
+        let selectedUserType = 'student';
+
+        userTypeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                userTypeBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                selectedUserType = btn.dataset.type;
+                
+                // Mise à jour du subtitle selon le type
+                const subtitle = document.querySelector('.login-subtitle');
+                if (selectedUserType === 'tutor') {
+                    subtitle.textContent = 'Accédez à votre espace tuteur';
+                } else {
+                    subtitle.textContent = 'Connectez-vous à votre compte pour continuer';
+                }
+            });
+        });
+
+        // Gestion de la soumission du formulaire
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('remember').checked;
+            
+            // Simulation de connexion
+            console.log('Connexion:', {
+                userType: selectedUserType,
+                email: email,
+                password: password,
+                remember: remember
+            });
+            
+            // Animation de chargement
+            const btn = document.querySelector('.login-btn');
+            const originalText = btn.textContent;
+            btn.textContent = 'Connexion en cours...';
+            btn.style.opacity = '0.7';
+            
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.opacity = '1';
+                
+                // Fermer le modal après connexion réussie
+                closeLoginModal();
+                
+                // Afficher un message de succès
+                alert(`Connexion réussie en tant que ${selectedUserType === 'tutor' ? 'Tuteur' : 'Étudiant'} !`);
+                
+                // Ici vous pouvez rediriger vers le dashboard approprié
+                // window.location.href = selectedUserType === 'tutor' ? '/tutor-dashboard' : '/student-dashboard';
+            }, 2000);
+        });
+
+        // Animation des champs de saisie
+        const inputs = document.querySelectorAll('.form-input');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.style.transform = 'scale(1.02)';
+            });
+            
+            input.addEventListener('blur', () => {
+                input.parentElement.style.transform = 'scale(1)';
+            });
+        });
+
+        // Animation smooth scroll pour la navigation
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });      
